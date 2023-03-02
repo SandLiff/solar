@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Верстка «Solar»</title>
+	</head>
+
+	<body>
+		<div class="rootpage">
+			<h1>Верстка «Solar»</h1>
+			<div class="rootpage__info">
+				Використані мови: HTML, CSS(SCSS), JS, PHP. style.min.css використовуйте як основний CSS-файл для прискорення завантаження. В app.js
+				знаходиться js-скріпти. На сайті: Таби, навігація по сторінці, динамічний адаптив, відзивчивий адаптив, стилізація+валідація форм,
+				відправка форми в ТГ. Сума замовлення: 4000₴ (2000 сплачено предоплатою).
+			</div>
+			<h2>Готові сторінки:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html">Головна</a></li>
+			</ol>
+			<div class="rootpage__tnx">
+				<h2>Дякую за замовлення!</h2>
+				<p>Буду радий гарному відгуку.</p>
+				<p>Звертайтесь ще!</p>
+			</div>
+			<div class="rootpage__contacts">
+				<h2>Мої контакти:</h2>
+				<p>
+					Пошта:
+					<a href="mailto:vladislavbonoparte@gmail.com">vladislavbonoparte@gmail.com</a>
+				</p>
+				<p>Телефон: <a href="tel:380507812758">380 50 781 27 58</a></p>
+				<p>
+					Соц. мережі:
+					<a href="https://instagram.com/vladislavbonoparte" target="_blank">Instagram</a>
+					<a href="https://t.me/nevmews">Telegram</a>
+				</p>
+			</div>
+		</div>
+	</body>
+	<style>
+		@charset "UTF-8";
+		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+		*,
+		*::before,
+		*::after {
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+			box-sizing: border-box;
+		}
+
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			min-width: 320px;
+			width: 100%;
+			color: #fff;
+			background-color: #8a5ae2;
+		}
+
+		body {
+			font-family: Montserrat;
+			font-size: 100%;
+			line-height: 1;
+			font-size: 1rem;
+		}
+
+		a {
+			text-decoration: underline;
+			color: #62fbf3;
+		}
+
+		a:visited {
+			text-decoration: underline;
+			color: rgba(98, 251, 243, 0.639);
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		ul li {
+			list-style: none;
+		}
+
+		img {
+			vertical-align: top;
+		}
+
+		.wrapper {
+			width: 100%;
+			min-height: 100%;
+			overflow: hidden;
+		}
+
+		.rootpage {
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		@media (max-width: 767px) {
+			.rootpage {
+				padding: 30px 15px;
+			}
+		}
+
+		h1 {
+			color: #62fbf3;
+			font-size: 2.5rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+
+		@media (max-width: 767px) {
+			h1 {
+				font-size: 1.85rem;
+				margin: 0px 0px 1.25rem 0px;
+			}
+		}
+
+		h2 {
+			color: #62fbf3;
+			font-size: 1.25rem;
+			margin: 0px 0px 1rem 0px;
+		}
+
+		@media (max-width: 767px) {
+			h2 {
+				font-size: 1.125rem;
+				margin: 0px 0px 1rem 0px;
+			}
+		}
+
+		.rootpage__info {
+			line-height: 1.4;
+			margin: 0px 0px 1.5rem 0px;
+		}
+
+		.rootpage__list {
+			margin: 0px 0px 2.25rem 1.25rem;
+		}
+
+		.rootpage__list li:not(:last-child) {
+			margin: 0px 0px 15px 0px;
+		}
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 200px;
+			padding: 20px 65px;
+			line-height: 140%;
+		}
+
+		@media (max-width: 767px) {
+			.rootpage__contacts,
+			.rootpage__tnx {
+				border-radius: 40px;
+				padding: 20px;
+			}
+		}
+
+		.rootpage__contacts {
+			background: #7c27c6;
+			box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+		}
+
+		.rootpage__contacts a {
+			color: #62fbf3;
+		}
+
+		.rootpage__tnx {
+			background: #2d66c2;
+			margin: 0px 0px 1rem 0px;
+			box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+		}
+	</style>
+</html>
